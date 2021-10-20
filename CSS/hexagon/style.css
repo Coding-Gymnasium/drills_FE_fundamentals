@@ -5,14 +5,14 @@
 }
 
 body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	min-height: 100vh;
 	background: #000;
 }
 
 .container {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
 	animation: animate 4s linear infinite;
 }
 
@@ -23,6 +23,16 @@ body {
 	100% {
 		filter: hue-rotate(360deg);
 	}
+}
+
+.row {
+	display: flex;
+	margin-top: -32px;
+	margin-left: -50px;
+}
+
+.row:nth-child(even) {
+	margin-left: 5px;
 }
 
 .hexagon {

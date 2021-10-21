@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: whitesmoke;
+}
+
+.container {
+  margin-top: 2rem;
+  text-align: center;
+}
+.container > * {
+  margin: 1rem;
+}

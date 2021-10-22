@@ -8,14 +8,25 @@ h1 {
   font-size: 64px;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
 header {
-  height: 20rem;
+  height: auto;
   width: 100%;
   margin-bottom: 3rem;
   text-align: center;
 }
 
 header img {
+  width: auto;
+  height: auto;
   margin: 1rem;
 }
 
@@ -27,7 +38,31 @@ header img {
 }
 
 .flags img {
+  width: auto;
+  height: auto;
   width: 5rem;
   margin: 1rem;
   border-radius: 50%;
+}
+
+/**********************
+*  Recipe Pages Styles  *
+**********************/
+.recipe-header {
+  padding: 2rem;
+}
+.recipe-headerg img {
+  object-position: center;
+}
+
+.container.recipe {
+  background: whitesmoke;
+  width: 50%;
+  height: auto;
+  margin: 2rem auto;
+  padding: 3rem;
+}
+
+.container.recipe > * {
+  margin-bottom: 1rem;
 }

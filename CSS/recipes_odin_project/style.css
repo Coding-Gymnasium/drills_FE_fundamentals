@@ -3,14 +3,31 @@
   box-sizing: border-box;
 }
 
-body {
-  background: whitesmoke;
+h1 {
+  font-weight: bold;
+  font-size: 64px;
 }
 
-.container {
-  margin-top: 2rem;
+header {
+  height: 20rem;
+  width: 100%;
+  margin-bottom: 3rem;
   text-align: center;
 }
-.container > * {
+
+header img {
   margin: 1rem;
+}
+
+.recipes {
+  text-align: center;
+}
+.recipes > * {
+  margin: 1rem;
+}
+
+.flags img {
+  width: 5rem;
+  margin: 1rem;
+  border-radius: 50%;
 }

@@ -136,4 +136,14 @@
       </div>
     </div>
   </body>
+
+  <script>
+    function multiplyNode(node, count, deep) {
+      for (let i = 0, copy; i < count - 1; i++) {
+        copy = node.cloneNode(deep);
+        node.parentNode.insertBefore(copy, node);
+      }
+    }
+    multiplyNode(document.querySelector('.row'), 100, true);
+  </script>
 </html>

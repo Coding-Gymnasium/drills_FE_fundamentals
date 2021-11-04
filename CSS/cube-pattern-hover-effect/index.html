@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <title>Cube</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- 12 times -->
+      </div>
+      <div class="row">
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="cube">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- 12 times -->
+      </div>
+    </div>
+  </body>
+
+  <script>
+    function multiplyNode(node, count, deep) {
+      for (let i = 0, copy; i < count - 1; i++) {
+        copy = node.cloneNode(deep);
+        node.parentNode.insertBefore(copy, node);
+      }
+    }
+    multiplyNode(document.querySelector('.row'), 100, true);
+  </script>
+</html>
